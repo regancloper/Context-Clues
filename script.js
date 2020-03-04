@@ -5,7 +5,6 @@ var weapons = ['pistol', 'butter knife', 'nunchucks', 'balloon', 'pillow', 'coke
 // adds all accusation headings and event listeners
 for (var i = 0; i < 100; i++) {
     var h3 = '<h3 id="'+ (i + 1) + '">Accusation ' + (i + 1) + '</h3>';
-    console.log(h3);
     $('body').append(h3);
     var heading = $('#' + (i + 1));
     var text = "Accusation " + (i + 1) + ": I accuse " + friends[(i % friends.length)] + ", with the " + weapons[(i % weapons.length)] + " in the " + locations[(i % locations.length)] + "!";
